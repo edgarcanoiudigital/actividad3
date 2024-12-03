@@ -1,0 +1,117 @@
+/* Fondo general y configuración básica */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7eb; /* Verde claro suave */
+    color: #333; /* Texto principal */
+}
+
+/* Título principal */
+h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #ff7f50; /* Naranja coral */
+    background-color: #d4e6a5; /* Verde pastel */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de productos */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjetas de productos */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 450px; /* Altura fija */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes de productos */
+.card img {
+    width: 100%;
+    height: 150px; /* Tamaño fijo */
+    object-fit: cover;
+    border-bottom: 3px solid #ff7f50; /* Línea naranja */
+}
+
+/* Títulos de productos */
+.card h3 {
+    font-size: 1em;
+    margin: 10px;
+    color: #2e8b57; /* Verde fuerte */
+    text-align: center;
+}
+
+/* Texto de productos */
+.card p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 5px 10px;
+    text-align: left;
+    max-height: 100px; /* Altura máxima para texto */
+    overflow: auto; /* Habilitar desplazamiento */
+    scrollbar-width: thin; /* Barra de desplazamiento delgada */
+    scrollbar-color: #d4e6a5 #f5f7eb;
+}
+
+.card p::-webkit-scrollbar {
+    width: 5px;
+}
+
+.card p::-webkit-scrollbar-thumb {
+    background: #d4e6a5; /* Verde pastel */
+    border-radius: 5px;
+}
+
+/* Botón de enlace */
+.card a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ff7f50; /* Naranja coral */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #e76a3c; /* Naranja oscuro */
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    background-color: #2e8b57; /* Verde fuerte */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 3px solid #ff7f50; /* Línea naranja */
+}
